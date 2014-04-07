@@ -1,0 +1,483 @@
+@charset "utf-8";
+/* Brickwall Tavern and Dining Room */
+
+/* 
+   Meyer Reset
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+div, aside {
+	transition: all .5s;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-- fonts --*/
+
+@font-face {
+    font-family: 'HelveticaBlackRegular';
+    src: url('helvetica-black.eot');
+    src: url('helvetica-black.eot') format('embedded-opentype'),
+         url('helvetica-black.woff') format('woff'),
+         url('helvetica-black.ttf') format('truetype'),
+         url('helvetica-black.svg#HelveticaBlackRegular') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'HelveticaBlackRegular';
+        src: url('helvetica-black.svg#HelveticaBlackRegular') format('svg');
+
+    }
+}
+
+
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url('helvetica-bold.eot');
+    src: url('helvetica-bold.eot') format('embedded-opentype'),
+         url('helvetica-bold.woff') format('woff'),
+         url('helvetica-bold.ttf') format('truetype'),
+         url('helvetica-bold.svg#HelveticaBold') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+    font-family: 'HelveticaBold';
+        src: url('helvetica-bold.svg#HelveticaBold') format('svg');
+
+    }
+}
+
+@font-face {
+    font-family: 'HelveticaNormalRegular';
+    src: url('helvetica-normal.eot');
+    src: url('helvetica-normal.eot') format('embedded-opentype'),
+         url('helvetica-normal.woff') format('woff'),
+         url('helvetica-normal.ttf') format('truetype'),
+         url('helvetica-normal.svg#HelveticaNormalRegular') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+    font-family: 'HelveticaNormalRegular';
+        src: url('helvetica-normal.svg#HelveticaNormalRegular') format('svg');
+
+    }
+}
+
+
+/*-- style --*/
+
+body {
+	background:#000000;
+}
+
+img {
+	max-width:100%;	
+}
+
+p {
+    font-family: 'HelveticaBold';
+	font-size:13px;
+}
+
+.bold {
+    font-family: 'HelveticaBlackRegular';
+}
+
+.wrapper {
+	background:#963;
+	width:660px;
+	margin:0 auto;
+	padding:0 75px 0 75px;
+	padding-bottom:60px;
+/*	min-height:5500px;	*/
+	background:url(images/bg-repeat5.jpg) center center repeat-y;
+}
+
+header {
+	max-width:100%;
+}
+
+.header-cap {
+	margin-bottom:25px;
+}
+
+.masthead {
+	margin-bottom:20px;
+}
+
+.info-box, .header-black-bottom {
+	margin-top:3px;
+	color:#956c34;
+}
+
+.info-box a {
+	color:#956c34;
+	text-decoration:none;
+}
+
+.info-box a:hover {
+	text-decoration: underline;
+}
+
+.info-box div {
+	height:62px;
+	background:#000;
+	width:283px;
+	float: left;
+	margin-left: 6px;
+}
+
+.info-box img {
+	float:left;
+	max-height:62px;
+}
+
+.telephone {
+    font-family: 'HelveticaBlackRegular';
+}
+
+div.contact {
+	padding-top:14px;
+	padding-left:15px;
+	width:206px;
+	height:48px;
+	text-transform: uppercase;
+}
+
+div.contact p {
+	font-size: 10px;
+	margin-bottom: 2px;
+	margin-left: -2px;
+}
+
+div.hours {
+	padding-top:10px;
+	padding-left:18px;
+	width:347px;
+	height:52px;
+}
+
+.hours p {
+	clear:left;
+}
+
+.hours img {
+	max-width:32px;
+	margin-bottom: 3px;
+}
+
+.photo {
+	clear: both;
+	padding-top: 6px;
+}
+
+.header-menu {
+	width:245px;
+	margin-top:20px;
+	margin-bottom:22px;
+}
+
+.menu {
+	width:392px;
+}
+
+.hours ul {
+	margin-top: 4px;
+	margin-left: -3px;
+}
+
+.menu ul, ul {
+	margin:20px 0 16px 0;
+	display: inline-block;
+	float: left;
+	margin-left:20px;
+}
+
+.menu ul li, ul li {
+    font-family: 'HelveticaBlackRegular';
+	text-transform:uppercase;
+	font-size:12px;
+	margin-bottom:14px;
+	width:175px;
+}
+
+.hours ul li {
+	margin-bottom: 0px;
+	width: 160px;
+	font-size: 10px;
+}
+
+.hours ul li em {
+	font-family: 'HelveticaBold';
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+em.pad-fix {
+	padding-top: 2px;
+}
+
+.hours ul + ul {
+	margin-left: -42px;
+	margin-top: 14px;
+
+}
+
+.menu ul + ul {
+	margin-left:10px;
+}
+
+div.violator {
+	background-color:transparent;
+	float: right;
+	position: relative;
+	top: -81px;
+	left: 17px;
+	margin-bottom: -102px;
+}
+
+div.violator img {
+	width: 100px;
+	float: right;
+}
+
+.beers-always-on-tap img {
+	float: left;
+	max-width: 382px;
+	margin-top: -9px;
+	margin-left: -23px;
+	margin-bottom: -6px;
+	position: relative;
+	z-index: 2;
+}
+
+.meet-chef-neil-west img {
+	float: right;
+	max-width: 295px;
+	position: relative;
+	top: 3px;
+}
+
+span {
+    font-family: 'HelveticaNormalRegular';
+	text-transform:lowercase;
+	padding-top: 17px;
+	width: 160px;
+}
+
+em {
+	font-family: 'HelveticaNormalRegular';
+	text-transform: lowercase;
+	padding-top: 2px;
+	display: block;
+	width: 160px;
+}
+
+.thinner {
+	width: 160px !important;
+}
+
+.lunch {
+}
+
+.dinner {
+}
+
+aside {
+	width:243px;
+	padding-top:22px;
+}
+
+aside img {
+	margin-bottom:23px;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.sundaes .header-menu {
+	width: 309px;
+}
+
+footer {
+	clear: both;
+	max-width: 100%;
+	padding-top: 71px;
+}
+
+
+footer div.contact {
+	float: left;
+}
+
+footer p {
+	display: inline-block;
+	float: left;
+	margin-right: 16px;
+	margin-top: 13px;
+}
+
+footer a {
+	color: #000000;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+
+.email a:hover {
+	border-bottom: 2px solid #000000;
+}
+
+footer p, footer a {
+	text-transform: uppercase;
+}
+
+footer .social {
+	float: right;
+	position: relative;
+	top: 7px;
+}
+
+footer .social img {
+	height: 17px;
+}
+
+footer .social a {
+	display: inline-block;
+}
+
+
+
+.coin {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+	filter: alpha(opacity=15);
+	position: relative;
+	top: -6px;
+	left: -3px;
+	float: left;
+}
+
+.coin img {
+	width: 20px;
+	height: 29px !important;
+}
+
+em.thinnest {
+	width: 140px;
+}
+
+em.floats {
+	display: inline;
+}
+
+.ipad footer .social {
+	top: 8px;
+}
+
+/*neil page 
+======================= */
+
+.neil-copy {
+	margin-top: 1.375em;
+}
+
+.neil-copy img, .neil-header, .neil-copy p {
+	position: relative;
+}
+
+.neil-copy img:nth-of-type(1) {
+	width: 406px;
+	float: left;
+	margin-right: 1em;
+}
+
+.neil-copy img:nth-of-type(2) {
+	width: 238px;
+}
+
+.neil-copy img:nth-of-type(3) {
+	width: 228px;
+	/*padding-left: 0.4em;*/
+	padding-top: 1.25em;
+	left: 0.66em;
+}
+
+.neil-header {
+	font-family: 'HelveticaBlackRegular';
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-top: 0.8em;
+	left: 0.48em;
+}
+
+.neil-copy p {
+	font-family: 'HelveticaNormalRegular';
+	margin-top: 1.2em;
+	font-size: 12px;
+	line-height: 15px;
+	left: 0.88em;
+}
+
+.neil-copy p:nth-of-type(2) {
+	margin-top: 2.5em;
+}
+
+@media only screen and (min-width: 600px) {
+	.hidden-desktop {
+		display: none;
+	}
+}

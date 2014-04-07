@@ -1,0 +1,209 @@
+div, aside {
+	transition: all .5s;
+}
+
+body {
+	width: 100%;
+}
+
+.wrapper {
+	width: 90%;
+	padding: 0 5% 70px 5%;
+	background:url(images/bg-repeat5.jpg) center center repeat;
+}
+
+aside {
+	clear: both;
+	width: 100%;
+}
+
+.menu, .sundaes .header-menu, footer div.contact {
+	width: 100%;
+}
+
+.menu ul {
+	margin-left: 17px;
+}
+
+.menu ul + ul {
+	float: left;
+	margin-left: 9%;
+}
+
+.menu ul li, .menu ul li span, em, .thinner {
+	width: 130px !important;
+}
+
+.header-menu {
+	width: 100%;
+}
+
+.left .right {
+	float: none;
+}
+
+.info-box img {
+	display: none;
+}
+
+.info-box div {
+	margin: 0px;
+	margin-bottom: 6px;
+}
+
+div.contact {
+	width: 97%;
+	padding-left: 0;
+}
+
+div.contact p {
+	margin-left: 17px;
+}
+
+div.hours {
+	width: 100%;
+	padding-top: 0;
+	padding-left: 0;
+	margin-bottom: 0;
+	height: 63px;
+}
+
+div.hours img, div.hours p {
+	margin-left: 18px;
+}
+
+.hours img {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+footer img {
+	height: 4px;
+}
+
+footer p {
+	display: block;
+	line-height: 0px;
+	clear: left;
+	margin-bottom: 1px;
+}
+
+footer .social {
+	clear: none;
+	display: inline;
+}
+
+.hours ul {
+	margin-top: 14px;
+	margin-left: 17px;
+}
+
+.hours ul li {
+	margin-bottom: 0;
+	font-size: 11px;
+}
+
+div.violator {
+	top: -66px;
+	left: 20px;
+	margin-bottom: -112px;
+}
+
+div.violator img {
+	width: 69px;
+}
+
+.hidden-mobile {
+	display: none;
+}
+
+.coin {
+	top: -4px;
+}
+
+.coin img {
+	width: 20px;
+	height: 25px !important;	
+}
+
+/* neil 
+=================== */
+
+.neil-copy img:nth-of-type(2) {
+	margin-top: 1.3em;
+	width: 100%;
+}
+
+.neil-copy img:nth-of-type(3) {
+	padding-top: 1.25em;
+	width: 100%;
+}
+
+
+.neil-copy p br {
+	display: none;
+}
+
+.meet-the-chef {
+	position: relative;
+	top: -143px;
+	left: 8px;
+}
+
+/* beer violator 3/4/14 
+======================= */
+
+.beers-always-on-tap img {
+	max-width: 103.5%;
+	margin-left: -10px;
+	margin-top: -6px;
+}
+
+.meet-chef-neil-west img {
+	max-width: 100%;
+	left: 0px;
+	top: 2px;
+	z-index: 1;
+	padding-bottom: 1px;
+}
+
+
+@media only screen and (max-width: 479px) {
+	footer .social {
+		top: 1px;
+	}
+
+	div.hours ul li {
+		width: 144px;
+		font-size: 10px;
+	}
+
+	div.hours ul + ul {
+		position: relative;
+		float: right;
+		margin-left: 0;
+		margin-right: 20px;
+		top: -54px;
+		left: -4px;
+	}
+
+	em.pad-fix {
+	padding-top: 2px;
+	}
+
+	.menu ul {
+	margin-left: 14px;
+	}
+
+	.menu ul li, .menu ul li span, em, .thinner {
+	width: 120px !important;
+	}
+
+}
+
+
+
+
